@@ -453,3 +453,17 @@ ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that 
 mysql> create database gwrental;
 Query OK, 1 row affected (0.07 sec)
 
+mysql> \. create.sql
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+mysql> use gwrental;
+Database changed
