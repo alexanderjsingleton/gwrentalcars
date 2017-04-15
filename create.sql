@@ -75,9 +75,10 @@ CREATE TABLE MAINTENANCE_LOG
 CREATE TABLE RESERVATION
 (
   ReservationID INT NOT NULL,
-  Date INT NOT NULL,
+  Pick_Up_Date INT NOT NULL,
   Daily_Rate INT NOT NULL,
   Total INT NOT NULL,
+  Return_Date INT NOT NULL,
   CustomerID INT NOT NULL,
   RentalOfficeID INT NOT NULL,
   PRIMARY KEY (ReservationID),
