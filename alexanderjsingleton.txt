@@ -467,3 +467,1194 @@ ERROR 1046 (3D000): No database selected
 ERROR 1046 (3D000): No database selected
 mysql> use gwrental;
 Database changed
+mysql> show tables;
+Ctrl-C -- sending "KILL QUERY 141" to server ...
+Ctrl-C -- query aborted.
+ERROR 2013 (HY000): Lost connection to MySQL server during query
+mysql> Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 146
+Server version: 5.6.27-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use gwrental;
+Database changed
+mysql> show tables;
+Empty set (0.06 sec)
+
+mysql> \. create.sql
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.10 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure INT NOT NULL,
+  VIN INT NOT NULL,
+  EmployeeID INT NOT NULL,
+  PRIMARY' at line 4
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> \. insert.sql
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+ERROR 1062 (23000): Duplicate entry '2' for key 'PRIMARY'
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 5 warnings (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Up Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES ('01' at line 1
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('09', '11111AAAAA', '05/08/2016', 'Oil Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('10', '22222BBBBB', '07/27/2016', 'Tire Replacement')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('11', '33333CCCCC', '11/27/2016', 'Annual Maintenance')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('12', '44444DDDDD', '02/08/2017', 'Alignment Check')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('11', '55555EEEEE', '03/11/2017', 'Filter Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('10', '22222BBBBB', '04/19/2017', 'Oil Change')' at line 1
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+mysql> show tables;
++------------------------+
+| Tables_in_gwrental     |
++------------------------+
+| ACCESSORY              |
+| CUSTOMER               |
+| CUSTOMER_PHONE_NO      |
+| EMPLOYEE               |
+| EMPLOYING              |
+| INCLUDES               |
+| RENTAL_OFFICE_LOCATION |
+| RESERVATION            |
+| RESERVES               |
+| VEHICLE                |
++------------------------+
+10 rows in set (0.06 sec)
+
+mysql> select * from customer;
+ERROR 1146 (42S02): Table 'gwrental.customer' doesn't exist
+mysql> select * from CUSTOMER;
++------------+---------------+---------------+---------------+----------------+--------------+
+| CustomerID | CustomerFName | CustomerLName | CustomerEmail | DriversLicense | RewardNumber |
++------------+---------------+---------------+---------------+----------------+--------------+
+|          1 |             0 |             0 |             0 |      999990013 |           13 |
+|          2 |             0 |             0 |             0 |      999990001 |            1 |
+|          3 |             0 |             0 |             0 |      999990002 |            2 |
+|          4 |             0 |             0 |             0 |      999990003 |            3 |
+|          5 |             0 |             0 |             0 |      999990004 |            4 |
+|          6 |             0 |             0 |             0 |      999990005 |            5 |
++------------+---------------+---------------+---------------+----------------+--------------+
+6 rows in set (0.06 sec)
+
+mysql> drop database gwrental;
+Query OK, 10 rows affected (0.14 sec)
+
+mysql> create database gwrental;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> \. create.sql
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+mysql> create database gwrental;
+ERROR 1007 (HY000): Can't create database 'gwrental'; database exists
+mysql> delete database gwrental;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database gwrental' at line 1
+mysql> drop database gwrental;
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> create database gwrental;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> \. create.sql
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+mysql> use gwrental;
+Database changed
+mysql> \. create.sql
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure INT NOT NULL,
+  VIN INT NOT NULL,
+  EmployeeID INT NOT NULL,
+  PRIMARY' at line 4
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> \. insert.sql
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+ERROR 1062 (23000): Duplicate entry '2' for key 'PRIMARY'
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 5 warnings (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Up Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES ('01' at line 1
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('09', '11111AAAAA', '05/08/2016', 'Oil Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('10', '22222BBBBB', '07/27/2016', 'Tire Replacement')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('11', '33333CCCCC', '11/27/2016', 'Annual Maintenance')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('12', '44444DDDDD', '02/08/2017', 'Alignment Check')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('11', '55555EEEEE', '03/11/2017', 'Filter Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('10', '22222BBBBB', '04/19/2017', 'Oil Change')' at line 1
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+mysql> drop tables;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> show tables;
++------------------------+
+| Tables_in_gwrental     |
++------------------------+
+| ACCESSORY              |
+| CUSTOMER               |
+| CUSTOMER_PHONE_NO      |
+| EMPLOYEE               |
+| EMPLOYING              |
+| INCLUDES               |
+| RENTAL_OFFICE_LOCATION |
+| RESERVATION            |
+| RESERVES               |
+| VEHICLE                |
++------------------------+
+10 rows in set (0.06 sec)
+
+mysql> drop database gwrental;
+Query OK, 10 rows affected (0.13 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| innodb             |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.06 sec)
+
+mysql> create database gw rental;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rental' at line 1
+mysql> create database gwrental;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> use gwrental;
+Database changed
+mysql> \. create.sql
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.10 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure INT NOT NULL,
+  VIN INT NOT NULL,
+  EmployeeID INT NOT NULL,
+  PRIMARY' at line 4
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> \. insert.sql
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+ERROR 1062 (23000): Duplicate entry '2' for key 'PRIMARY'
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 5 warnings (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Up Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES ('01' at line 1
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('09', '11111AAAAA', 05/08/2016, 'Oil Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('10', '22222BBBBB', 07/27/2016, 'Tire Replacement')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('11', '33333CCCCC', 11/27/2016, 'Annual Maintenance')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('12', '44444DDDDD', 02/08/2017, 'Alignment Check')' at line 1
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+mysql> show tables;
++------------------------+
+| Tables_in_gwrental     |
++------------------------+
+| ACCESSORY              |
+| CUSTOMER               |
+| CUSTOMER_PHONE_NO      |
+| EMPLOYEE               |
+| EMPLOYING              |
+| INCLUDES               |
+| RENTAL_OFFICE_LOCATION |
+| RESERVATION            |
+| RESERVES               |
+| VEHICLE                |
++------------------------+
+10 rows in set (0.06 sec)
+
+mysql> selet * from vehicle;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'selet * from vehicle' at line 1
+mysql> select * from vehicle;
+ERROR 1146 (42S02): Table 'gwrental.vehicle' doesn't exist
+mysql> select * from VEHICLE;
++-------+------+-------+------+-------+--------------+---------+
+| VIN   | Make | Model | Year | Color | LicensePlate | Mileage |
++-------+------+-------+------+-------+--------------+---------+
+| 11111 |    0 |     0 | 2014 |     0 |            0 |   27365 |
++-------+------+-------+------+-------+--------------+---------+
+1 row in set (0.06 sec)
+
+mysql> DROP database gwrental;
+Query OK, 10 rows affected (0.26 sec)
+
+mysql> create database gwrental;
+Query OK, 1 row affected (0.06 sec)
+
+mysql> use gwrental;
+Database changed
+mysql> \. create.sql
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure INT NOT NULL,
+  VIN INT NOT NULL,
+  EmployeeID INT NOT NULL,
+  PRIMARY' at line 4
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> \. insert.sql
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+ERROR 1062 (23000): Duplicate entry '2' for key 'PRIMARY'
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 5 warnings (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Up Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES ('01' at line 1
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('09', '11111AAAAA', 05/08/2016, 'Oil Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('10', '22222BBBBB', 07/27/2016, 'Tire Replacement')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('11', '33333CCCCC', 11/27/2016, 'Annual Maintenance')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('12', '44444DDDDD', 02/08/2017, 'Alignment Check')' at line 1
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+mysql> delete database gwrental;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database gwrental' at line 1
+mysql> delete database gwrental;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database gwrental' at line 1
+mysql> delete database gwrental;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database gwrental' at line 1
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| gwrental           |
+| innodb             |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+6 rows in set (0.06 sec)
+
+mysql> delete database gwrental;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database gwrental' at line 1
+mysql> drop database gwrental;
+Query OK, 10 rows affected (0.12 sec)
+
+mysql> create database gwrental;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> \. create.sql
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+mysql> use gwrental;
+Database changed
+mysql> \. create.sql
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure INT NOT NULL,
+  VIN INT NOT NULL,
+  EmployeeID INT NOT NULL,
+  PRIMARY' at line 4
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> drop database gwrental;
+Query OK, 10 rows affected (0.14 sec)
+
+mysql> create database gwrental;
+Query OK, 1 row affected (0.06 sec)
+
+mysql> use gwrental;
+Database changed
+mysql> \. create.sql
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure VARCHAR(90) NOT NULL,
+  VIN INT NOT NULL,
+  EmployeeID INT NOT NULL,
+ ' at line 4
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> drop database gwrental;
+Query OK, 10 rows affected (0.13 sec)
+
+mysql> create database gwrental;
+Query OK, 1 row affected (0.06 sec)
+
+mysql> \. create.sql
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+mysql> use gwrental;
+Database changed
+mysql> \. create.sql
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure VARCHAR(90
+    ) NOT NULL,
+  Vin INT NOT NULL,
+  EmployeeID INT NOT NU' at line 4
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> drop database gwrental;
+Query OK, 10 rows affected (0.12 sec)
+
+mysql> create database gwrental;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> use gwrental;
+Database changed
+mysql> \. create.sql
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure VARCHAR(90) NOT NULL,
+  Vin INT NOT NULL,
+  EmployeeID INT NOT NULL,
+ ' at line 4
+Query OK, 0 rows affected (0.10 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.10 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> drop database gwrental;
+Query OK, 10 rows affected (0.13 sec)
+
+mysql> create database gwrental;
+Query OK, 1 row affected (0.06 sec)
+
+mysql> \. create.sql
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+mysql> use gwrental;
+Database changed
+mysql> \. create.sql
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure VARCHAR(90) NOT NULL,
+  VIN INT NOT NULL,
+  EmployeeID INT NOT NULL,
+ ' at line 4
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> \. insert.sql
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+ERROR 1062 (23000): Duplicate entry '2' for key 'PRIMARY'
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.07 sec)
+
+Query OK, 1 row affected, 3 warnings (0.06 sec)
+
+Query OK, 1 row affected, 4 warnings (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Up Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES ('01' at line 1
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('09', '11111AAAAA', 05/08/2016, 'Oil Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('10', '22222BBBBB', 07/27/2016, 'Tire Replacement')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('11', '33333CCCCC', 11/27/2016, 'Annual Maintenance')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES ('12', '44444DDDDD', 02/08/2017, 'Alignment Check')' at line 1
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_1` FOREIGN KEY (`VIN`) REFERENCES `VEHICLE` (`VIN`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`gwrental`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+mysql> 
+mysql> Query OK, 0 rows affected (0.09 sec)
+    -> 
+    -> Query OK, 0 rows affected (0.09 sec)
+    -> 
+    -> Query OK, 0 rows affected (0.09 sec)
+    -> 
+    -> Query OK, 0 rows affected (0.08 sec)
+    -> 
+    -> Query OK, 0 rows affected (0.08 sec)
+    -> 
+    -> ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure VARCHAR(90) NOT NULL,
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Quer' at line 1
+    '>   VIN INT NOT NULL,
+    '>   EmployeeID INT NOT NULL,
+    '>  ' at line 4
+    -> Query OK, 0 rows affected (0.09 sec)
+    -> 
+    -> Query OK, 0 rows affected (0.09 sec)
+    -> 
+    -> Query OK, 0 rows affected (0.09 sec)
+    -> 
+    -> Query OK, 0 rows affected (0.09 sec)
+    -> 
+    -> mysql> drop database gwrental;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'the manual that corresponds to your MySQL server version for the right syntax to' at line 1
+mysql> Query OK, 10 rows affected (0.13 sec)
+    -> 
+    -> mysql> create database gwrental;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Query OK, 10 rows affected (0.13 sec)
+
+mysql> create database gwrental' at line 1
+mysql> Query OK, 1 row affected (0.06 sec)
+    -> 
+    -> mysql> \. create.sql
+ERROR 1050 (42S01): Table 'VEHICLE' already exists
+ERROR 1050 (42S01): Table 'EMPLOYEE' already exists
+ERROR 1050 (42S01): Table 'ACCESSORY' already exists
+ERROR 1050 (42S01): Table 'CUSTOMER' already exists
+ERROR 1050 (42S01): Table 'CUSTOMER_PHONE_NO' already exists
+ERROR 1050 (42S01): Table 'RENTAL_OFFICE_LOCATION' already exists
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure VARCHAR(90) NOT NULL,
+  VIN INT NOT NULL,
+  EmployeeID INT NOT NULL,
+ ' at line 4
+ERROR 1050 (42S01): Table 'RESERVATION' already exists
+ERROR 1050 (42S01): Table 'EMPLOYING' already exists
+ERROR 1050 (42S01): Table 'RESERVES' already exists
+ERROR 1050 (42S01): Table 'INCLUDES' already exists
+mysql> ERROR 1046 (3D000): No database selected
+    -> ERROR 1046 (3D000): No database selected
+    -> ERROR 1046 (3D000): No database selected
+    -> ERROR 1046 (3D000): No database selected
+    -> ERROR 1046 (3D000): No database selected
+    -> ERROR 1046 (3D000): No database selected
+    -> ERROR 1046 (3D000): No database selected
+    -> ERROR 1046 (3D000): No database selected
+    -> ERROR 1046 (3D000): NoERROR 1046 (3D000): NoERROR 1046 (00):ERROR 1046 (3D000): NoERROR 1046 (3D000): No database selected
+    -> mysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use gwmysql> use ected (mysql> use gwmys OK,mysql> use gwmysql> use gc)
+    -> 
+    -> Query OK, 0Query OK, 0Query OK, 0Query OK,  1064 Query OK, 0Query OK, 0Query OK, 0QuSQLQuery OK, 0Query OK, nual that corresponds to your MySQL server version for Query OK, 0Query to use near 'PQuery OK, 0Query OK
+    '>     ) NOT NULL,
+    '>   V  V  V  V  V  V  V  V  V  eID INT  V  V  V  V  V  V  V  V  V  eIDows a  V  V  V  V  V c)
+    '> 
+    '> QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQerQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ OQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQroQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQows afQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQbaseQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ(0.07QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQanQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQowsQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQerQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ OQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQffectedQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQerQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ OQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQroQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQows afQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQbaseQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ(0.0oceQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQerQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ OQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQroQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQows afQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQbaseQQK, 0 rQQQQQQQQQQed (0.QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQerQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ OQQQQQQQte  affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.06 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.06 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.06 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 3 warnings (0.06 sec)
+    '> 
+    '> Query OK, 1 row affected, 4 warnings (0.07 sec)
+    '> 
+    '> ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+    '> ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+    '> ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+    '> ERROR 1062 (23000): Duplicate entry '0' for key 'LicensePlate'
+    '> Query OK, 1 row affected, 1 warning (0.07 sec)
+    '> 
+    '> Query OK, 1 row affected, 1 warning (0Query OK, 1 row affected, 1 warning (0Query OK(0.Query OK, 1 row affected, 1 warning (0Query  (0.0Query OK, 1 row affected, 1 warning (0Query OK.07Query OK, 1 row affected, 1 warning (0Queryr in yQuery OK, 1 row affected, 1 warning (0Queresponds to your MySQL server version for the right syntaQuery OK, 1 row affected, 1 warning (0Query Ote, Query OK, 1 row affected, 1 warning (0Query OK' aQuery OK, 1 row affected, 1 warning (0Query OKQueQuery OK, 1 row affected, 1 warning (0QuOK, 1 rowQuery OK, 1 row affected, 1 warning (0Qufected (0Query OK, 1 row affected, 1 warning (0Query OK
+    -> Ctrl-C -- exit!
+Aborted
