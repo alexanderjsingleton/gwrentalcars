@@ -3753,3 +3753,230 @@ ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint f
 ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
 ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
 ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+mysql> show tables;
++------------------------+
+| Tables_in_alex         |
++------------------------+
+| ACCESSORY              |
+| CUSTOMER               |
+| CUSTOMER_PHONE_NO      |
+| EMPLOYEE               |
+| EMPLOYING              |
+| INCLUDES               |
+| RENTAL_OFFICE_LOCATION |
+| RESERVATION            |
+| RESERVES               |
+| VEHICLE                |
++------------------------+
+10 rows in set (0.06 sec)
+
+mysql> select * from maintenance_log
+    -> ;
+ERROR 1146 (42S02): Table 'alex.maintenance_log' doesn't exist
+mysql> select * from reserves;
+ERROR 1146 (42S02): Table 'alex.reserves' doesn't exist
+mysql> SELECT * FROM RESERVES;
+Empty set (0.07 sec)
+
+mysql> drop database alex;
+Query OK, 10 rows affected (0.14 sec)
+
+mysql> create database alex;
+Query OK, 1 row affected (0.06 sec)
+
+mysql> use alex;
+Database changed
+mysql> mysql> \. create.sql
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure VARCHAR(200) NOT NULL,
+  VIN VARCHAR(200) NOT NULL,
+  EmployeeID INT N' at line 4
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> mysql>\. insert.sql
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+ERROR 1062 (23000): Duplicate entry '2' for key 'PRIMARY'
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily_Rate, T' at line 4
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (09, '11111AAAAA', 05-08-2016, 'Oil Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (10, '22222BBBBB', 07-27-2016, 'Tire Replacement')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (11, '33333CCCCC', 11-27-2016, 'Annual Maintenance')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (12, '44444DDDDD', 02-08-2017, 'Alignment Check')' at line 1
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+mysql> show tables;
++------------------------+
+| Tables_in_alex         |
++------------------------+
+| ACCESSORY              |
+| CUSTOMER               |
+| CUSTOMER_PHONE_NO      |
+| EMPLOYEE               |
+| EMPLOYING              |
+| INCLUDES               |
+| RENTAL_OFFICE_LOCATION |
+| RESERVATION            |
+| RESERVES               |
+| VEHICLE                |
++------------------------+
+10 rows in set (0.06 sec)
+
+mysql> SELECT * FROM RESERVES;
+Empty set (0.06 sec)
+
+mysql> SELECT *  FROM MAINTENANCE_LOG;
+ERROR 1146 (42S02): Table 'alex.MAINTENANCE_LOG' doesn't exist
+mysql> SELECT * FROM INLCUDES;
+ERROR 1146 (42S02): Table 'alex.INLCUDES' doesn't exist
+mysql> SELECT * FROM INCLUDES;
+Empty set (0.06 sec)
+
+mysql> SELECT * FROM CUSTOMER;
++------------+---------------+---------------+------------------------+----------------+--------------+
+| CustomerID | CustomerFName | CustomerLName | CustomerEmail          | DriversLicense | RewardNumber |
++------------+---------------+---------------+------------------------+----------------+--------------+
+|          1 | John          | Constantine   | jconstantine@jld.org   | 999990013      |           13 |
+|          2 | Hal           | Jordan        | hjordan@glcorps.org    | 999990001      |            1 |
+|          3 | Barry         | Allen         | ballen@jla.org         | 999990002      |            2 |
+|          4 | Dinah         | Lance         | dlance@jla.org         | 999990003      |            3 |
+|          5 | Felicity      | Smoak         | fsmoak@palmer_tech.com | 999990004      |            4 |
+|          6 | Zatanna       | Zatara        | zzatara@jld.org        | 999990005      |            5 |
++------------+---------------+---------------+------------------------+----------------+--------------+
+6 rows in set (0.07 sec)
+
+mysql> SELECT * FROM RENTAL_OFFICE_LOCATION;
++----------------+--------------------+------------+-------+---------+
+| RentalOfficeID | StreetAddress      | City       | State | ZipCode |
++----------------+--------------------+------------+-------+---------+
+|              1 | 123 Paper Street   | Portland   | OR    |   12345 |
+|              2 | 19 Tower Lane      | Gilead     | NY    |   19991 |
+|              3 | 237 Overlook View  | Estes Park | CO    |   98765 |
+|              4 | 1 Pennywise Circle | Derry      | ME    |   66666 |
++----------------+--------------------+------------+-------+---------+
+4 rows in set (0.06 sec)
+
