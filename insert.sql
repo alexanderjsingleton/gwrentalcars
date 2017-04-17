@@ -132,23 +132,23 @@ VALUES (56789, 'Power Inverter', '50', '1');
 
 /* This section populates the RESERVATION table */
 
-INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
-VALUES (01, '06/06/2017', 06/13/2017, '125', '875', '000001', '03')
+INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES (01, 06-06-2017, 06-13-2017, 125.00, 875.00, 000001, 03)
 
-INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
-VALUES (02, '03/01/2017', 03/03/2017, '95', '285', '000002', '01')
+INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES (02, 03-01-2017, 03-03-2017, 95.00, 285.00, 000002, 01)
 
-INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
-VALUES (03, '04/05/2017', 04/19/2017, '80', '1120', '000003', '04')
+INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES (03, 04-05-2017, 04-19-2017, 80.00, 1120.00, 000003, 04)
 
-INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
-VALUES (04, '06/06/2017', 06/13/2017, '125', '875', '000004', '02')
+INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES (04, 06-06-2017, 06-13-2017, 125.00, 875.00, 000004, 02)
 
-INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
-VALUES (05, '07/22/2017', 07/27/2017, '115', '575', '000005', '03')
+INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES (05, 07-22-2017, 07-27-2017, 115.00, 575.00, 000005, 03)
 
-INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return Date, Daily Rate, Total, CustomerID, RentalOfficeID)
-VALUES (06, '08/19/2017', 08/23/2017, '95', '380', '000006', '02')
+INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily Rate, Total, CustomerID, RentalOfficeID)
+VALUES (06, 08-19-2017, 08-23-2017, 95.00, 380.00, 000006, 02)
 
 /* This section populates the EMPLOYING table */
 
@@ -191,16 +191,16 @@ VALUES ('04', '12');
 /* This section populates the MAINTENANCE_LOG table */
 
 INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_Date, Procedure)
-VALUES (09, '11111AAAAA', 05/08/2016, 'Oil Change');
+VALUES (09, '11111AAAAA', 05-08-2016, 'Oil Change');
 
 INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_Date, Procedure)
-VALUES (10, '22222BBBBB', 07/27/2016, 'Tire Replacement');
+VALUES (10, '22222BBBBB', 07-27-2016, 'Tire Replacement');
 
 INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_Date, Procedure)
-VALUES (11, '33333CCCCC', 11/27/2016, 'Annual Maintenance');
+VALUES (11, '33333CCCCC', 11-27-2016, 'Annual Maintenance');
 
 INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_Date, Procedure)
-VALUES (12, '44444DDDDD', 02/08/2017, 'Alignment Check');
+VALUES (12, '44444DDDDD', 02-08-2017, 'Alignment Check');
 
 
 /* This section populates the RESERVES table */
