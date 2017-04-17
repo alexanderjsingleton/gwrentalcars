@@ -3432,3 +3432,324 @@ mysql> show tables;
 mysql> select * FROM RESERVATION;
 Empty set (0.06 sec)
 
+mysql> drop database alex;
+Query OK, 10 rows affected (0.14 sec)
+
+mysql> show tables;
+ERROR 1046 (3D000): No database selected
+mysql> create database alex;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> use alex;
+Database changed
+mysql> mysql> \. create.sql
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure VARCHAR(200) NOT NULL,
+  VIN VARCHAR(200) NOT NULL,
+  EmployeeID INT N' at line 4
+Query OK, 0 rows affected (0.10 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> mysql>\. insert.sql
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+ERROR 1062 (23000): Duplicate entry '2' for key 'PRIMARY'
+Query OK, 1 row affected (0.08 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Rate, Total, CustomerID, RentalOfficeID)
+VALUES (01, 06-06-2017, 06-13-2017, 125' at line 1
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.08 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (09, '11111AAAAA', 05-08-2016, 'Oil Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (10, '22222BBBBB', 07-27-2016, 'Tire Replacement')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (11, '33333CCCCC', 11-27-2016, 'Annual Maintenance')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (12, '44444DDDDD', 02-08-2017, 'Alignment Check')' at line 1
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+mysql> drop database alex;
+Query OK, 10 rows affected (0.15 sec)
+
+mysql> create database alex;
+Query OK, 1 row affected (0.06 sec)
+
+mysql> use database alex;
+ERROR 1049 (42000): Unknown database 'database'
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| alex               |
+| gwrental           |
+| innodb             |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+7 rows in set (0.06 sec)
+
+mysql> use alex;
+Database changed
+mysql> mysql> \. create.sql
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure VARCHAR(200) NOT NULL,
+  VIN VARCHAR(200) NOT NULL,
+  EmployeeID INT N' at line 4
+Query OK, 0 rows affected (0.10 sec)
+
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> mysql>\. insert.sql
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+ERROR 1062 (23000): Duplicate entry '2' for key 'PRIMARY'
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.10 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily_Rate, T' at line 4
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (09, '11111AAAAA', 05-08-2016, 'Oil Change')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (10, '22222BBBBB', 07-27-2016, 'Tire Replacement')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (11, '33333CCCCC', 11-27-2016, 'Annual Maintenance')' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Procedure)
+VALUES (12, '44444DDDDD', 02-08-2017, 'Alignment Check')' at line 1
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`RESERVES`, CONSTRAINT `RESERVES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`alex`.`INCLUDES`, CONSTRAINT `INCLUDES_ibfk_2` FOREIGN KEY (`ReservationID`) REFERENCES `RESERVATION` (`ReservationID`))
