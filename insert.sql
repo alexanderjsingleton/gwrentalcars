@@ -190,8 +190,6 @@ VALUES ('04', '12');
 
 /* This section populates the MAINTENANCE_LOG table */
 
-
-
 INSERT INTO MAINTENANCE_LOG (Maintenance_ID, EmployeeID, VIN, Maintenance_Date, Maintenance_Procedure)
 VALUES (01, 09, '11111AAAAA', 20160508, 'Oil Change');
 
