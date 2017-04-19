@@ -190,16 +190,16 @@ VALUES ('04', '12');
 
 /* This section populates the MAINTENANCE_LOG table */
 
-INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_date, Maintenance_Procedure) 
+INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_Date, Maintenance_Procedure) 
 VALUES ('09', '11111AAAAA', '05082016', 'Oil Change')
 
-INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_date, Maintenance_Procedure) 
+INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_Date, Maintenance_Procedure) 
 VALUES ('09', '11111AAAAA', '05082016', 'Oil Change')
 
-INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_date, Maintenance_Procedure) 
+INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_Date, Maintenance_Procedure) 
 VALUES ('09', '11111AAAAA', '05082016', 'Oil Change')
 
-INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_date, Maintenance_Procedure) 
+INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_Date, Maintenance_Procedure) 
 VALUES ('09', '11111AAAAA', '05082016', 'Oil Change')
 
 -- INSERT INTO MAINTENANCE_LOG (EmployeeID, VIN, Maintenance_Date, Maintenance_Procedure)
