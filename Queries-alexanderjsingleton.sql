@@ -4,7 +4,6 @@ select Daily_Rate, count(*) AS "Number of rates per location"
 FROM RESERVATION 
 GROUP BY RentalOfficeID;
 
-
 -- 2.) "COUNT OF EMPLOYEES" 
 
 SELECT TITLE AS "TITLE", COUNT(DISTINCT EmployeeFNAME) 
@@ -19,13 +18,11 @@ WHERE SOUNDEX(CustomerFName) = SOUNDEX('Zitanna');
 
 -- 4.) "Total Per State" 
 
-
 SELECT STATE, Total
 FROM RENTAL_OFFICE_LOCATION r,
      RESERVATION i
 WHERE r.RentalOfficeID=i.RentalOfficeID
 ORDER BY Total;
-
 
 -- 5.) "Available make and models with mileage at least 10,000 miles but less than 20,000 miles." 
 
