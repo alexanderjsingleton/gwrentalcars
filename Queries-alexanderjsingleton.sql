@@ -27,7 +27,13 @@ WHERE r.RentalOfficeID=i.RentalOfficeID
 ORDER BY Total;
 
 
--- 5.) "Total Per State" 
+-- 5.) "Available make and models with mileage at least 10,000 miles but less than 20,000 miles." 
+
+SELECT Make, Model
+FROM VEHICLE
+WHERE Mileage >= 10000
+AND Mileage < 20000;
+
 
 
 
