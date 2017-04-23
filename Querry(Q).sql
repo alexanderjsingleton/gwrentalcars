@@ -1,0 +1,46 @@
+/*Report shwoing Customer Information, Reservation Information, and Vehicle Information */
+
+SELECT  RESERVATION.ReservationID,CUSTOMER.CustomerFName AS FirstName, CUSTOMER.CustomerLName AS LastName, 
+	    CUSTOMER_PHONE_NO.CustomerPhoneNo AS PhoneNumber, RESERVATION.Pick_Up_Date, RESERVATION.Total as RentalPrice, 
+		RENTAL_OFFICE_LOCATION.RentalOfficeID AS RentalLocation, VEHICLE.VIN AS VehicleInfo
+FROM CUSTOMER, RESERVATION, CUSTOMER_PHONE_NO, RENTAL_OFFICE_LOCATION, VEHICLE, RESERVES
+WHERE CUSTOMER.CustomerID = RESERVATION.CustomerID AND 
+	CUSTOMER_PHONE_NO.CustomerID = CUSTOMER.CustomerID AND
+	RENTAL_OFFICE_LOCATION.RentalOfficeID = RESERVATION.RentalOfficeID AND
+	VEHICLE.VIN = RESERVES.VIN AND
+	RESERVATION.ReservationID = RESERVES.ReservationID 
+ORDER BY ReservationID;
+
+/* Show prices of reservations with the accessory cost added */
+
+SELECT RESERVATION.ReservationID, (RESERVATION.Total + ACCESSORY.Cost) AS TotalCost, CustomerLName AS LastName
+FROM RESERVATION, INCLUDES, ACCESSORY, CUSTOMER
+WHERE RESERVATION.ReservationID = INCLUDES.ReservationID AND
+	  INCLUDES.SerialNumber = ACCESSORY.SerialNumber AND
+	  CUSTOMER.CustomerID = RESERVATION.CustomerID
+ORDER BY RESERVATION.ReservationID;
+
+/*Vehicle Age with model and make*/
+
+SELECT VEHICLE.LicensePlate, VEHICLE.Make, VEHICLE.Model, (YEAR(RESERVATION.Pick_Up_Date) - VEHICLE.Year) AS VehicleAge
+FROM VEHICLE, RESERVES, RESERVATION
+WHERE RESERVATION.ReservationID = RESERVES.ReservationID AND
+	  VEHICLE.VIN = RESERVES.VIN;
+	  
+/* Employee count by rental office */
+
+SELECT RENTAL_OFFICE_LOCATION.RentalOfficeID, RENTAL_OFFICE_LOCATION.City AS Location, COUNT(EMPLOYEE.EmployeeID) AS EmployeeCount
+FROM RENTAL_OFFICE_LOCATION, EMPLOYEE, EMPLOYING
+WHERE RENTAL_OFFICE_LOCATION.RentalOfficeID = EMPLOYING.RentalOfficeID AND
+	  EMPLOYING.EmployeeID = EMPLOYEE.EmployeeID
+GROUP BY RENTAL_OFFICE_LOCATION.RentalOfficeID;
+
+/*Show vehicles with maintenance record*/
+
+SELECT MAINTENANCE_LOG.Maintenance_ID, MAINTENANCE_LOG.Maintenance_Date, MAINTENANCE_LOG.Maintenance_Procedure,
+	   VEHICLE.LicensePlate, VEHICLE.Model, EMPLOYEE.EmployeeID, EMPLOYEE.EmployeeLName AS LastName
+FROM MAINTENANCE_LOG, VEHICLE, EMPLOYEE
+WHERE MAINTENANCE_LOG.EmployeeID = EMPLOYEE.EmployeeID AND
+	  MAINTENANCE_LOG.VIN = VEHICLE.VIN;
+
+
