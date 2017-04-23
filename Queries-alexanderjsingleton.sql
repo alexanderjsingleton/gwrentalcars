@@ -5,3 +5,9 @@ FROM RESERVATION
 GROUP BY RentalOfficeID;
 
 
+-- 2.) "COUNT OF EMPLOYEES" 
+
+SELECT TITLE AS "TITLE", COUNT(DISTINCT EmployeeFNAME) 
+	AS "Number of employee-positions"  
+FROM EMPLOYEE GROUP BY TITLE;
+
