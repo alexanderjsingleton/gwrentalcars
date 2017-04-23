@@ -11,3 +11,9 @@ SELECT TITLE AS "TITLE", COUNT(DISTINCT EmployeeFNAME)
 	AS "Number of employee-positions"  
 FROM EMPLOYEE GROUP BY TITLE;
 
+-- 3.) "Sounds like using SOUNDEX" 
+
+SELECT CustomerFName 
+FROM CUSTOMER 
+WHERE SOUNDEX(CustomerFName) = SOUNDEX('Zitanna');
+
