@@ -17,3 +17,17 @@ SELECT CustomerFName
 FROM CUSTOMER 
 WHERE SOUNDEX(CustomerFName) = SOUNDEX('Zitanna');
 
+-- 4.) "Total Per State" 
+
+
+SELECT STATE, Total
+FROM RENTAL_OFFICE_LOCATION r,
+     RESERVATION i
+WHERE r.RentalOfficeID=i.RentalOfficeID
+ORDER BY Total;
+
+
+-- 5.) "Total Per State" 
+
+
+
