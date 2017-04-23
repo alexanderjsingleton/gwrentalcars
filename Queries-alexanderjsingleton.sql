@@ -33,7 +33,3 @@ SELECT Make, Model
 FROM VEHICLE
 WHERE Mileage >= 10000
 AND Mileage < 20000;
-
-
-
-
