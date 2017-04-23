@@ -1,0 +1,1 @@
+select Daily_Rate, count(*) AS "Number of rates per location" from RESERVATION GROUP BY RentalOfficeID;
