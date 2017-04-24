@@ -150,24 +150,6 @@ VALUES (05, 20170722, 20170727, 115.00, 575.00, 000005, 03);
 INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily_Rate, Total, CustomerID, RentalOfficeID)
 VALUES (06, 20170819, 20170823, 95.00, 380.00, 000006, 02);
 
--- INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily_Rate, Total, CustomerID, RentalOfficeID)
--- VALUES (01, 06-06-2017, 06-13-2017, 125.00, 875.00, 000001, 03);
-
--- INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily_Rate, Total, CustomerID, RentalOfficeID)
--- VALUES (02, 03-01-2017, 03-03-2017, 95.00, 285.00, 000002, 01);
-
--- INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily_Rate, Total, CustomerID, RentalOfficeID)
--- VALUES (03, 04-05-2017, 04-19-2017, 80.00, 1120.00, 000003, 04);
-
--- INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily_Rate, Total, CustomerID, RentalOfficeID)
--- VALUES (04, 06-06-2017, 06-13-2017, 125.00, 875.00, 000004, 02);
-
--- INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily_Rate, Total, CustomerID, RentalOfficeID)
--- VALUES (05, 07-22-2017, 07-27-2017, 115.00, 575.00, 000005, 03);
-
--- INSERT INTO RESERVATION (ReservationID, Pick_Up_Date, Return_Date, Daily_Rate, Total, CustomerID, RentalOfficeID)
--- VALUES (06, 08-19-2017, 08-23-2017, 95.00, 380.00, 000006, 02);
-
 /* This section populates the EMPLOYING table */
 
 INSERT INTO EMPLOYING (RentalOfficeID, EmployeeID)
