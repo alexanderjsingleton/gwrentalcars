@@ -8,7 +8,7 @@ ORDER BY Total;
 
 SELECT *
 FROM MAINTENANCE_LOG
-ORDER BY Date;
+ORDER BY Maintenance_Date;
 
 SELECT RentalOfficeID, Pick_Up_Date, Return_Date, Daily_Rate, Total
 FROM RESERVATION
