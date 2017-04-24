@@ -219,6 +219,9 @@ VALUES ('44444DDDDD', 04);
 INSERT INTO RESERVES (VIN, ReservationID)
 VALUES ('55555EEEEE', 05);
 
+INSERT INTO RESERVES (VIN, ReservationID)
+VALUES ('33333CCCCC', 06);
+
 /* This section populates the INCLUDES table */
 
 INSERT INTO INCLUDES (SerialNumber, ReservationID)
