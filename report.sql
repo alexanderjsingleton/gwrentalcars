@@ -56,7 +56,9 @@ FROM RENTAL_OFFICE_LOCATION r,
 WHERE r.RentalOfficeID=i.RentalOfficeID
 ORDER BY Total;
 
--- "Available make and models with mileage at least 10,000 miles but less than 20,000 miles." 
+-- "Available make and models with mileage at least 10,000 miles but less than 20,000 miles."  
+--  The query should only display the models within the above range, which this case should be two different
+--  makes and the two corresponding models.
 
 SELECT Make, Model
 FROM VEHICLE
@@ -134,31 +136,31 @@ WHERE RESERVATION.ReservationID = RESERVES.ReservationID
  AND RESERVES.VIN = VEHICLE.VIN;
 
 
--- Tom
+-- This query will pull employee information, and group the results by their last name.
 
 SELECT EmployeeID, EmployeeLName, EmployeeFName
 FROM EMPLOYEE
 GROUP BY EmployeeLName;
  
--- 
+-- This query will pull vehicle and customer identification information from existing reservations, and display them in order based on the total cost of the reservation.
 
 SELECT VIN, CustomerID, Total
-FROM VEHICLE, RESERVATION
+FROM RESERVES, RESERVATION
+WHERE RESERVES.ReservationID=RESERVATION.ReservationID
 ORDER BY Total;
 
--- 
-
+-- This query will pull all rows from the maintenance log, and will order them by date from most recent to oldest.
 SELECT *
 FROM MAINTENANCE_LOG
 ORDER BY Maintenance_Date;
 
--- 
+-- This query will pull reservation date and cost information, and will display it organized by office location.
 
 SELECT RentalOfficeID, Pick_Up_Date, Return_Date, Daily_Rate, Total
 FROM RESERVATION
 GROUP BY RentalOfficeID;
 
--- 
+-- This query will list each accessory type and its related cost, and will organize the data in descending order by said cost.
 
 Select Type, Cost
 FROM ACCESSORY
