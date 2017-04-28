@@ -1,22 +1,28 @@
--- 1.) "Number of rates per location" 
+-- This query will count all records within the Daily_Rate column using the count-function returning the number of records within a table
+-- grouped by RentalOfficeID from the Reservation-table, which will then be displayed as an alias-table entitled, "Number of rates per location." 
 
-select Daily_Rate, count(*) AS "Number of rates per location" 
+SELECT Daily_Rate, count(*) AS "Number of rates per location" 
 FROM RESERVATION 
 GROUP BY RentalOfficeID;
 
--- 2.) "COUNT OF EMPLOYEES" 
+-- This query will count all of the employed positions by selecting the Title Column from the Employee-table using the COUNT method in conjucnction with the DISTINCT method to effectively 
+-- count all unique last-names then grouping the count of unique last names corresponding to those employee-positions by Title from the EMPLOYEE-Table displayed in an alias-table "COUNT OF EMPLOYEES." 
 
-SELECT TITLE AS "TITLE", COUNT(DISTINCT EmployeeFNAME) 
+SELECT TITLE AS "TITLE", COUNT(DISTINCT EmployeeLNAME) 
 	AS "Number of employee-positions"  
 FROM EMPLOYEE GROUP BY TITLE;
 
--- 3.) "Sounds like using SOUNDEX" 
+-- The query utilizes the SOUNDEX-method to find a customer that sound phoentically similar to "Zitanna" (e.g. "Find name that sounds like using Zitanna").
+-- According to Wikipedia, "was developed in 1985 by genealogist Gary Mokotoff and later improved by genealogist Randy Daitch because of problems they encountered 
+-- while trying to apply the Russell Soundex to Jews with Germanic or Slavic surnames (such as Moskowitz vs. Moskovitz or Levine vs. Lewin)." (https://en.wikipedia.org/wiki/Soundex)
 
 SELECT CustomerFName 
 FROM CUSTOMER 
 WHERE SOUNDEX(CustomerFName) = SOUNDEX('Zitanna');
 
--- 4.) "Total Per State" 
+-- This query will display the total-revenue collected per state by utiliziing an implicit-join format in addition to alias tables to effectively
+-- display the total-revenue collected by state effectively corresponding to the "RentalOfficeID" column contain within the two separate tables, effectively
+-- joining or "zipping-up" the separated data.  According to OracleSQL blog-spot, the "implicit join notation" simply lists the tables for joinning (http://sql-plsql.blogspot.com/2011/02/explicit-implicit-sql-joins.html)
 
 SELECT STATE, Total
 FROM RENTAL_OFFICE_LOCATION r,
@@ -24,9 +30,9 @@ FROM RENTAL_OFFICE_LOCATION r,
 WHERE r.RentalOfficeID=i.RentalOfficeID
 ORDER BY Total;
 
--- 5.) "Available make and models with mileage at least 10,000 miles but less than 20,000 miles."  
--- 		The query should only display the models within the above range, which this case should be two different
---  	makes and the two corresponding models.
+-- "Available make and models with mileage at least 10,000 miles but less than 20,000 miles."  
+--  The query should only display the models within the above range, which this case should be two different
+--  makes and the two corresponding models.
 
 SELECT Make, Model
 FROM VEHICLE
