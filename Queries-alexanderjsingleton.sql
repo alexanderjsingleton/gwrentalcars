@@ -12,8 +12,8 @@ SELECT TITLE AS "TITLE", COUNT(DISTINCT EmployeeLNAME)
 	AS "Number of employee-positions"  
 FROM EMPLOYEE GROUP BY TITLE;
 
--- The query utilizes the SOUNDEX-method to find a customer that sound phoentically similar to "Zitanna" (e.g. "Find name that sounds like using Zitanna").
--- According to Wikipedia, "was developed in 1985 by genealogist Gary Mokotoff and later improved by genealogist Randy Daitch because of problems they encountered 
+-- The query utilizes the SOUNDEX-method to find a customer that sounds phoentically similar to "Zitanna" (e.g. "Find name that sounds like using Zitanna").
+-- According to Wikipedia, "SOUNDEX was developed in 1985 by genealogist Gary Mokotoff and later improved by genealogist Randy Daitch because of problems they encountered 
 -- while trying to apply the Russell Soundex to Jews with Germanic or Slavic surnames (such as Moskowitz vs. Moskovitz or Levine vs. Lewin)." (https://en.wikipedia.org/wiki/Soundex)
 
 SELECT CustomerFName 
@@ -21,8 +21,8 @@ FROM CUSTOMER
 WHERE SOUNDEX(CustomerFName) = SOUNDEX('Zitanna');
 
 -- This query will display the total-revenue collected per state by utiliziing an implicit-join format in addition to alias tables to effectively
--- display the total-revenue collected by state effectively corresponding to the "RentalOfficeID" column contain within the two separate tables, effectively
--- joining or "zipping-up" the separated data.  According to OracleSQL blog-spot, the "implicit join notation" simply lists the tables for joinning (http://sql-plsql.blogspot.com/2011/02/explicit-implicit-sql-joins.html)
+-- display the total-revenue collected by state corresponding to the "RentalOfficeID" column contained within the two separate tables, 
+-- joining or "zipping-up" the data separated between the tables.  According to OracleSQL blog-spot, the "implicit join notation" simply lists the tables for joining (http://sql-plsql.blogspot.com/2011/02/explicit-implicit-sql-joins.html)
 
 SELECT STATE, Total
 FROM RENTAL_OFFICE_LOCATION r,
@@ -30,9 +30,8 @@ FROM RENTAL_OFFICE_LOCATION r,
 WHERE r.RentalOfficeID=i.RentalOfficeID
 ORDER BY Total;
 
--- "Available make and models with mileage at least 10,000 miles but less than 20,000 miles."  
 --  The query should only display the models within the above range, which this case should be two different
---  makes and the two corresponding models.
+--  makes and the two corresponding models accordingly: "available make and models with mileage at least 10,000 miles but less than 20,000 miles."  
 
 SELECT Make, Model
 FROM VEHICLE
