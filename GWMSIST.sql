@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.17, for osx10.12 (x86_64)
 --
--- Host: gwrental.cg8qnwa72czw.us-west-2.rds.amazonaws.com    Database: alex
+-- Host: gwrental.cg8qnwa72czw.us-west-2.rds.amazonaws.com    Database: GWMSIST
 -- ------------------------------------------------------
 -- Server version	5.6.27-log
 
@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `alex`
+-- Current Database: `GWMSIST`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `alex` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `GWMSIST` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `alex`;
+USE `GWMSIST`;
 
 --
 -- Table structure for table `ACCESSORY`
@@ -343,4 +343,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-27 14:29:32
+-- Dump completed on 2017-04-27 21:29:10
