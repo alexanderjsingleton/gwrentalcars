@@ -1,5 +1,5 @@
--- This query will count all records within the Daily_Rate column using the count-function returning the number of records within a table
--- grouped by RentalOfficeID from the Reservation-table, which will then be displayed as an alias-table entitled, "Number of rates per location." 
+-- This query will count all records within the Daily_Rate column using the count-function returning the number of records within the RESERVATION-table grouped by RentalOfficeID, 
+-- which will then be displayed as an alias-column, "Number of rates per location." 
 
 SELECT Daily_Rate, count(*) AS "Number of rates per location" 
 FROM RESERVATION 
