@@ -1,4 +1,4 @@
-/*Report shwoing Customer Information, Reservation Information, and Vehicle Information */
+/*Report showing Customer Information, Reservation Information, and Vehicle Information */
 
 SELECT  RESERVATION.ReservationID,CUSTOMER.CustomerFName AS FirstName, CUSTOMER.CustomerLName AS LastName, 
 	    CUSTOMER_PHONE_NO.CustomerPhoneNo AS PhoneNumber, RESERVATION.Pick_Up_Date, RESERVATION.Total as RentalPrice, 
